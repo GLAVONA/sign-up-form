@@ -137,3 +137,9 @@ form {
     box-shadow: 1px 5px 5px black;
     opacity: 0.5;
 }
+
+.password-message{
+    color: red;
+    font-size: 0.8vw;
+
+}

@@ -12,7 +12,7 @@ email.addEventListener("keyup", validityCheck);
 firstName.addEventListener("keyup", validityCheck);
 lastName.addEventListener("keyup", validityCheck);
 
-function val(){
+function otherValidity(){
     if(email.checkValidity() && lastName.checkValidity() && firstName.checkValidity() ){
         return true;
     }
@@ -25,7 +25,7 @@ function val(){
 function validityCheck() {
     const submitButton = document.getElementById("sub");
 if (password.value!=="" && confPassword.value!==""){
-    if (password.value === confPassword.value && val()){
+    if (password.value === confPassword.value && otherValidity()){
         submitButton.style.opacity = "1";
         submitButton.removeAttribute("disabled");
     }
@@ -35,4 +35,15 @@ if (password.value!=="" && confPassword.value!==""){
     }
     }
     
+    if (password.value !== confPassword.value){
+        const message = document.querySelector(".password-message");
+        message.textContent = "Please make sure you entered the same password twice!"
+        confPassword.style.border = "1px solid red"
+        }
+
+    else {
+        const message = document.querySelector(".password-message");
+        message.textContent = ""
+        confPassword.style.border = ""
+    }
 }
