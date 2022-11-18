@@ -27,20 +27,36 @@
                     <div class="middle-left">
                         <form id="myform" action="" method="post">
                             <div class="row-1">
-                                <label for="first-name">* FIRST NAME</label>
-                                <input type="text" name="first-name" id="first-name" required>
-                                <label for="email">* EMAIL</label>
-                                <input type="email" name="email" id="email" required>
-                                <label for="password">* PASSWORD</label>
-                                <input type="password" name="password" id="password" required>
+                                <div class="wrapper">
+                                    <label for="first-name">* FIRST NAME</label>
+                                    <input type="text" name="first-name" id="first-name" required>
+                                </div>
+                                <div class="wrapper">
+                                    <label for="last-name">* LAST NAME</label>
+                                    <input type="text" name="last-name" id="last-name" required>
+                                </div>
+                                
                             </div>
                             <div class="row-2">
-                                <label for="last-name">* LAST NAME</label>
-                                <input type="text" name="last-name" id="last-name" required>
-                                <label for="number">PHONE NUMBER</label>
-                                <input type="text" name="number" id="number">
-                                <label for="confirm-password">* CONFIRM PASSWORD</label>
-                                <input type="confirm-password" name="confirm-password" id="confirm-password" required>
+                                <div class="wrapper">
+                                    <label for="email">* EMAIL</label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="wrapper">
+                                    <label for="number">PHONE NUMBER</label>
+                                    <input type="text" name="number" id="number">
+                                </div>
+                                
+                            </div>
+                            <div class="row-3">
+                                <div class="wrapper">
+                                    <label for="password">* PASSWORD</label>
+                                    <input type="password" name="password" id="password" required>
+                                </div>
+                                <div class="wrapper">
+                                    <label for="confirm-password">* CONFIRM PASSWORD</label>
+                                    <input type="confirm-password" name="confirm-password" id="confirm-password" required>
+                                </div>
                             </div>
                         </form>
                         <div class="password-message"></div>
