@@ -107,6 +107,7 @@ body{
 .lower{
     flex: 1 1 auto;
 }
+
 form {
     margin-top: 2vh;
 }
@@ -121,6 +122,10 @@ form {
     font-size: large;
 }
 
+.middle-left input:invalid{
+    border: 1px solid red;
+}
+
 .lower input[type="submit"]{
     color: white;
     padding: 1vw;
@@ -130,4 +135,5 @@ form {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(147,100,1,1) 100%);
     border: 1px solid black;
     box-shadow: 1px 5px 5px black;
+    opacity: 0.5;
 }
